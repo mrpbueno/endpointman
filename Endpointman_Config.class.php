@@ -38,8 +38,7 @@ class Endpointman_Config
         } else {
             $this->PHONE_MODULES_PATH = $this->MODULES_PATH . "_ep_phone_modules/";
             if (!file_exists($this->PHONE_MODULES_PATH)) {
-                mkdir($this->PHONE_MODULES_PATH, 0775);
-		mkdir($this->PHONE_MODULES_PATH."temp/export/", 0775);
+                mkdir($this->PHONE_MODULES_PATH, 0775);		
             }
             if (file_exists($this->PHONE_MODULES_PATH . "setup.php")) {
                 unlink($this->PHONE_MODULES_PATH . "setup.php");
