@@ -51,8 +51,8 @@ if (!file_exists(PHONE_MODULES_PATH . "temp/")) {
     mkdir(PHONE_MODULES_PATH . "temp/", 0764);
     mkdir(PHONE_MODULES_PATH . "temp/export/", 0764);
     mkdir(PHONE_MODULES_PATH . "temp/endpoint/", 0764);
-    copy(LOCAL_PATH . "install/base.php", PHONE_MODULES_PATH . "temp/endpoint/base.php");
-    copy(LOCAL_PATH . "install/global_template_data.json", PHONE_MODULES_PATH . "temp/endpoint/global_template_data.json");
+    //copy(LOCAL_PATH . "install/base.php", PHONE_MODULES_PATH . "temp/endpoint/base.php");
+    //copy(LOCAL_PATH . "install/global_template_data.json", PHONE_MODULES_PATH . "temp/endpoint/global_template_data.json");
     out("Creating temp folder");
 }
 
