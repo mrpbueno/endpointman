@@ -1022,8 +1022,10 @@ class Endpointman_Advanced
 
 							if(file_exists($this->PHONE_MODULES_PATH."endpoint"))
 							{
-								$endpoint_last_mod = filemtime($this->PHONE_MODULES_PATH."temp/endpoint/base.php");
-								rename($this->PHONE_MODULES_PATH."temp/endpoint/base.php", $this->PHONE_MODULES_PATH."endpoint/base.php");
+								// verificacao obsoleta
+								// arquivos adicionados na install.php
+								//$endpoint_last_mod = filemtime($this->PHONE_MODULES_PATH."temp/endpoint/base.php");
+								//rename($this->PHONE_MODULES_PATH."temp/endpoint/base.php", $this->PHONE_MODULES_PATH."endpoint/base.php");
 
 								outn(_("Updating Last Modified... "));
 								$sql = "UPDATE endpointman_global_vars SET value = '".$endpoint_last_mod."' WHERE var_name = 'endpoint_vers'";
