@@ -39,6 +39,7 @@ define("LOCAL_PATH", $amp_conf['AMPWEBROOT'] . '/admin/modules/endpointman/');
 
 if (!file_exists(PHONE_MODULES_PATH)) {
     mkdir(PHONE_MODULES_PATH, 0764);
+    mkdir(PHONE_MODULES_PATH . "endpoint/", 0764);
     out("Creating Phone Modules Directory");
 }
 
@@ -47,12 +48,17 @@ if (!file_exists(PHONE_MODULES_PATH . "setup.php")) {
     out("Moving Auto Provisioner Class");
 }
 
+if(file_exists(PHONE_MODULES_PATH . "endpoint/")) {
+   copy(LOCAL_PATH . "install/base.php", PHONE_MODULES_PATH . "endpoint/base.php");
+   copy(LOCAL_PATH . "install/autoload.php", PHONE_MODULES_PATH . "endpoint/autoload.php");
+   copy(LOCAL_PATH . "install/global_template_data.json", PHONE_MODULES_PATH . "endpoint/global_template_data.json");
+   out("Moving endpoint files");
+}
+
 if (!file_exists(PHONE_MODULES_PATH . "temp/")) {
     mkdir(PHONE_MODULES_PATH . "temp/", 0764);
     mkdir(PHONE_MODULES_PATH . "temp/export/", 0764);
-    mkdir(PHONE_MODULES_PATH . "temp/endpoint/", 0764);
-    //copy(LOCAL_PATH . "install/base.php", PHONE_MODULES_PATH . "temp/endpoint/base.php");
-    //copy(LOCAL_PATH . "install/global_template_data.json", PHONE_MODULES_PATH . "temp/endpoint/global_template_data.json");
+    mkdir(PHONE_MODULES_PATH . "temp/endpoint/", 0764);    
     out("Creating temp folder");
 }
 
