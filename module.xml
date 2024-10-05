@@ -1,7 +1,7 @@
 <module>
 	<rawname>endpointman</rawname>
 	<repo>unsupported</repo>
-	<name>End Point Manager</name>
+	<name>Endpoint Manager</name>
 	<version>14.0.4</version>
 	<type>setup</type>
 	<category>Settings</category>
@@ -13,7 +13,7 @@
 		<epm_config needsenginedb="yes" sort="3" hidden="true">Package Manager</epm_config>
 		<epm_advanced needsenginedb="yes" sort="4" hidden="true">Advanced Settings</epm_advanced>
 		<epm_placeholders needsenginedb="yes" sort="4" hidden="true">Config File Placeholders</epm_placeholders>
-		<epm_oss needsenginedb="yes" sort="0">OSS Endpoint Manager</epm_oss>
+		<epm_oss needsenginedb="yes" sort="0">Endpoint Manager</epm_oss>
 	</menuitems>
 	<description>
 		OSS PBX End Point Manager is the free supported PBX Endpoint Manager for FreePBX.
