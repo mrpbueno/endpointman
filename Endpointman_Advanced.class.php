@@ -1022,9 +1022,7 @@ class Endpointman_Advanced
 
 							if(file_exists($this->PHONE_MODULES_PATH."endpoint"))
 							{
-								// verificacao obsoleta
-								// arquivos adicionados na install.php
-								//$endpoint_last_mod = filemtime($this->PHONE_MODULES_PATH."temp/endpoint/base.php");
+								$endpoint_last_mod = filemtime($this->PHONE_MODULES_PATH."endpoint/base.php");
 								//rename($this->PHONE_MODULES_PATH."temp/endpoint/base.php", $this->PHONE_MODULES_PATH."endpoint/base.php");
 
 								outn(_("Updating Last Modified... "));
