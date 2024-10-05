@@ -33,8 +33,8 @@ global $db;
 
 out("Endpoint Manager Installer");
 
-//define("PHONE_MODULES_PATH", $amp_conf['AMPWEBROOT'] . '/admin/modules/_ep_phone_modules/');
-//define("LOCAL_PATH", $amp_conf['AMPWEBROOT'] . '/admin/modules/endpointman/');
+define("PHONE_MODULES_PATH", $amp_conf['AMPWEBROOT'] . '/admin/modules/_ep_phone_modules/');
+define("LOCAL_PATH", $amp_conf['AMPWEBROOT'] . '/admin/modules/endpointman/');
 
 
 if (!file_exists(PHONE_MODULES_PATH)) {
@@ -49,6 +49,7 @@ if (!file_exists(PHONE_MODULES_PATH . "setup.php")) {
 
 if (!file_exists(PHONE_MODULES_PATH . "temp/")) {
     mkdir(PHONE_MODULES_PATH . "temp/", 0764);
+    mkdir(PHONE_MODULES_PATH . "temp/export/", 0764);
     out("Creating temp folder");
 }
 
