@@ -117,7 +117,7 @@ $db->query($sql);
 
 
 if ($epmdbversion < "14.0.0.1"){
-$sql = "UPDATE endpointman_global_vars SET value = 'http://mirror.freepbx.org/provisioner/v3/' WHERE var_name = 'update_server'";
+$sql = "UPDATE endpointman_global_vars SET value = 'https://ossepm.incrediblepbx.com/' WHERE var_name = 'update_server'";
 $db->query($sql);
 }
 
