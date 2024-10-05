@@ -1,7 +1,7 @@
 <module>
 	<rawname>endpointman</rawname>
 	<repo>unsupported</repo>
-	<name>OSS PBX End Point Manager</name>
+	<name>End Point Manager</name>
 	<version>14.0.4</version>
 	<type>setup</type>
 	<category>Settings</category>
