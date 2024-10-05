@@ -74,7 +74,7 @@ if (empty($epmdbversion)) {
 		(3, 'gmtoff', ''),
 		(4, 'gmthr', ''),
 		(5, 'config_location', '/tftpboot/'),
-		(6, 'update_server', 'http://mirror.freepbx.org/provisioner/v3/'),
+		(6, 'update_server', 'https://ossepm.incrediblepbx.com/'),
 		(7, 'version', '" . $epmxmlversion  . "'),
 		(8, 'enable_ari', '0'),
 		(9, 'debug', '0'),
